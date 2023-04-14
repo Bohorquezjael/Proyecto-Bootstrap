@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}header{
+    background: #43d6ff;
+    display: flex;
+}div{
+    padding:15px;
+}.d1{
+/*flex-grow: 2;*/
+flex: auto;
+}nav{
+    display: flex;
+}button{
+    border-style: hidden;
+    height: 60px;
+    width: 60px;
+    align-items: stretch;
+}
+body{
+    background: #ceea31;
+}
