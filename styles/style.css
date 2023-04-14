@@ -8,7 +8,7 @@ header {
     display: flex;
 }
 
-div {
+div{
     padding: 8px;
 }
 
@@ -21,6 +21,14 @@ div {
 /* margin-left:auto; */
 flex: content;
 } 
+
+.d3{
+    display: flex;
+}
+
+.dropdown{
+    flex: auto;
+}
 
 button {
     align-items: stretch;

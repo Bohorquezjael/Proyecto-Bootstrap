@@ -15,17 +15,16 @@
 	<header class="navbar">
 		<div class="d1">
 			<img
-                class="navbar-brand"
+				class="navbar-brand"
 				src="assets/bootstrap_icon.ico"
 				alt="logo"
-				height="100px"
-                width="100px"
-
+				height="80px"
+				width="100px"
 			/>
 		</div>
-        <div class="d2 navbar-brand">
-            <h1 class="h1">Proyecto con Bootstrap</h1>
-        </div>
+		<div class="d2 navbar-brand d-inline-block">
+			<h1 class="h1">Proyecto con Bootstrap</h1>
+		</div>
 		<div class="d3">
 			<nav class="navbar-expand-sm">
 				<button class="btn btn-outline-secondary">
@@ -41,44 +40,79 @@
 					<img src="assets/door-open-fill.svg" height="40px" width="40px" />
 					<h4 class="h4">Log In</h4>
 				</button>
-				<button class="btn btn-outline-secondary">
-					<img
-						src="assets/lines_menu_burger_icon_123889.ico"
-						alt="menu"
-						size="40px"
-						width="40px"
-					/>
-					<h4 class="h4">Menu</h4>
-				</button>
+				<div class="dropdown d-inline-block">
+					<button
+						class="btn btn-outline-secondary dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						<img
+							src="assets/lines_menu_burger_icon_123889.ico"
+							alt="menu"
+							size="40px"
+							width="40px"
+						/>
+						<h4 class="h4">Menu</h4>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
 	<body>
-        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="4000">
-                <img src="assets/galeria_bstp.jpg" class="d-block w-100 img-fluid" alt="galería">
-                </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                <img src="assets/primeros-pasos_bstp.png" class="d-block w-100 img-fluid" alt="primeros pasos">
-                </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                <img src="assets/imgs_bstp.png" class="d-block w-100 img-fluid" alt="imgs">
-                </div>
-            </div>
-            <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next"  type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-            </div>
-
-
-            <script src="styles/bootstrap-5.3.0-alpha3-dist/js/bootstrap.js"></script>
-
-
-    </body>
+		<div
+			id="carouselExampleAutoplaying"
+			class="carousel slide carousel-fade carousel-dark"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="4000">
+					<img
+						src="assets/galeria_bstp.jpg"
+						class="d-block w-100 img-fluid"
+						alt="galería"
+					/>
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<img
+						src="assets/primeros-pasos_bstp.png"
+						class="d-block w-100 img-fluid"
+						alt="primeros pasos"
+					/>
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<img
+						src="assets/imgs_bstp.png"
+						class="d-block w-100 img-fluid"
+						alt="imgs"
+					/>
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleAutoplaying"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+		</div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+		<script src="styles/bootstrap-5.3.0-alpha3-dist/js/bootstrap.js"></script>
+	</body>
 </html>
