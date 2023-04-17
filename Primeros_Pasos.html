@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi página web con Bootstrap</title>
+
+	<!-- Importar los archivos CSS de Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-...">
+
+	<!-- Importar los archivos JS de Bootstrap (opcional) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-..." ></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-..." ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-..." ></script>
+    <style>
+		/* Personalización de estilos */
+
+		/* Color de fondo de la página */
+		body {
+			background-color: #f2f2f2;
+		}
+
+		/* Color de fondo de la barra de navegación */
+		.navbar {
+			background-color: #212529;
+		}
+
+		/* Color del texto de la barra de navegación */
+		.navbar-light .navbar-brand,
+		.navbar-light .navbar-nav .nav-link {
+			color: #f8f9fa;
+		}
+
+		/* Color del botón de la barra de navegación */
+		.navbar-light .navbar-toggler-icon {
+			background-color: #f8f9fa;
+		}
+
+		/* Estilo del encabezado */
+		.encabezado {
+			background-image: url('https://images.unsplash.com/photo-1496427589096-5f2f1e078e05?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+			background-position: center;
+			background-size: cover;
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #f8f9fa;
+			text-align: center;
+		}
+
+		.encabezado h1 {
+			font-size: 50px;
+			margin-bottom: 20px;
+		}
+
+		.encabezado p {
+			font-size: 20px;
+			margin-bottom: 40px;
+		}
+
+		.encabezado a {
+			font-size: 16px;
+			padding: 10px 20px;
+			background-color: #f8f9fa;
+			color: #212529;
+			border-radius: 25px;
+			transition: background-color 0.3s ease;
+		}
+
+		.encabezado a:hover {
+			background-color: #f8f9fa;
+			color: #212529;
+		}
+
+		/* Estilo de la sección de noticias */
+		.noticias {
+			background-color: #ffffff;
+			padding: 30px;
+			margin-bottom: 30px;
+		}
+
+		.noticias h2 {
+			font-weight: 700;
+			margin-bottom: 20px;
+			color: #212529;
+		}
+
+		.noticias .card {
+			border: none;
+			box-shadow: 0 }
+            </style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Mi página web</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Acerca de</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<h1>Bienvenidos a mi página web</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper est eget nibh dignissim, eu pretium orci maximus. Aenean rutrum fringilla nunc, et aliquam dolor feugiat eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ultrices augue a pretium facilisis. Mauris sem quam, dictum ac augue eu, aliquet luctus lacus. Nam at mi a augue viverra aliquam eu eu justo.</p>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<img src="https://via.placeholder.com/300x300" alt="Imagen de ejemplo" class="img-fluid">
+			</div>
+		</div>
+	</div>
+
+	<footer class="bg-light py-3">
+		<div class="container">
+			<p class="text-center">&copy; 2023 Mi página web. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+</body>
+</html>

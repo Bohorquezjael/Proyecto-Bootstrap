@@ -18,7 +18,7 @@
 				class="navbar-brand"
 				src="assets/bootstrap_icon.ico"
 				alt="logo"
-				height="80px"
+				height="100px"
 				width="100px"
 			/>
 		</div>
@@ -40,12 +40,12 @@
 					<img src="assets/door-open-fill.svg" height="40px" width="40px" />
 					<h4 class="h4">Log In</h4>
 				</button>
-				<div class="dropdown d-inline-block">
 					<button
-						class="btn btn-outline-secondary dropdown-toggle"
+						class="btn btn-outline-secondary"
 						type="button"
-						data-bs-toggle="dropdown"
-						aria-expanded="false"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasExample" 
+						aria-controls="offcanvasExample"
 					>
 						<img
 							src="assets/lines_menu_burger_icon_123889.ico"
@@ -55,14 +55,25 @@
 						/>
 						<h4 class="h4">Menu</h4>
 					</button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
-					</ul>
-				</div>
 			</nav>
 		</div>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">Lista De Ejemplos</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			<div>
+				<p>A lo largo de la unidad realizamos algunas paginas web para poner en practica </p>
+				<ol>
+					<li><a href=""></a></li>
+					<li><a href="">Galería de Imágenes</a></li>
+					<li><a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" </a>Propiedades de Imágenes </a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ol>
+			</div>
 	</header>
 	<body>
 		<div
