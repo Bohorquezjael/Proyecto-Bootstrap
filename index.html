@@ -1,129 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<link
-			rel="stylesheet"
-			href="styles\bootstrap-5.3.0-alpha3-dist\css\bootstrap.css"
-		/>
-		<link rel="stylesheet" href="styles/style.css" />
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="assets\bstp_logo.ico" type="image/x-icon" />
-		<title>Proyecto Final Bootstrap</title>
-	</head>
-	<header class="navbar">
-		<div class="d1">
-			<img
-				class="navbar-brand"
-				src="assets/bootstrap_icon.ico"
-				alt="logo"
-				height="100px"
-				width="100px"
-			/>
-		</div>
-		<div class="d2 navbar-brand d-inline-block">
-			<h1 class="h1">Proyecto con Bootstrap</h1>
-		</div>
-		<div class="d3">
-			<nav class="navbar-expand-sm">
-				<button class="btn btn-outline-secondary">
-					<img
-						src="assets/house-door-fill.svg"
-						alt="principal"
-						height="40px"
-						width="40px"
-					/>
-					<h4 class="h4">Inicio</h4>
-				</button>
-				<button class="btn btn-outline-secondary">
-					<img src="assets/door-open-fill.svg" height="40px" width="40px" />
-					<h4 class="h4">Log In</h4>
-				</button>
-					<button
-						class="btn btn-outline-secondary"
-						type="button"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#offcanvasExample" 
-						aria-controls="offcanvasExample"
-					>
-						<img
-							src="assets/lines_menu_burger_icon_123889.ico"
-							alt="menu"
-							size="40px"
-							width="40px"
-						/>
-						<h4 class="h4">Menu</h4>
-					</button>
-			</nav>
-		</div>
-		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-			<div class="offcanvas-header">
-				<h5 class="offcanvas-title" id="offcanvasExampleLabel">Lista De Ejemplos</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			</div>
-			<div class="offcanvas-body">
-			<div>
-				<p>A lo largo de la unidad realizamos algunas paginas web para poner en practica </p>
-				<ol>
-					<li><a href=""></a></li>
-					<li><a href="textoelelem.html">Galería de Imágenes</a></li>
-					<li><a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" </a>Propiedades de Imágenes </a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-				</ol>
-			</div>
-	</header>
-	<body>
-		<div
-			id="carouselExampleAutoplaying"
-			class="carousel slide carousel-fade carousel-dark"
-			data-bs-ride="carousel"
-		>
-			<div class="carousel-inner">
-				<div class="carousel-item active" data-bs-interval="4000">
-					<img
-						src="assets/galeria_bstp.jpg"
-						class="d-block w-100 img-fluid"
-						alt="galería"
-					/>
-				</div>
-				<div class="carousel-item" data-bs-interval="4000">
-					<img
-						src="assets/primeros-pasos_bstp.png"
-						class="d-block w-100 img-fluid"
-						alt="primeros pasos"
-					/>
-				</div>
-				<div class="carousel-item" data-bs-interval="4000">
-					<img
-						src="assets/imgs_bstp.png"
-						class="d-block w-100 img-fluid"
-						alt="imgs"
-					/>
-				</div>
-			</div>
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carouselExampleAutoplaying"
-				data-bs-slide="prev"
-			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Anterior</span>
-			</button>
-			<button
-				class="carousel-control-next"
-				type="button"
-				data-bs-target="#carouselExampleAutoplaying"
-				data-bs-slide="next"
-			>
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Siguiente</span>
-			</button>
-		</div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-		<script src="styles/bootstrap-5.3.0-alpha3-dist/js/bootstrap.js"></script>
-	</body>
+<head>
+    <link rel="stylesheet" href="/styles/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--tips: to change the nav placement use .fixed-top,.fixed-bottom,.sticky-top-->
+            <!--<a class="navbar-brand" href="/assets/icono_bootstrap.ico">My Brand</a>-->
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/icono_bootstrap.ico" class="d-inline-block align-top" width="90" height="90" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+        
+                <span class="navbar-text">
+                    Some text
+                </span>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</body>
 </html>
