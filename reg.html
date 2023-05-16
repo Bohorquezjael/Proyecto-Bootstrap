@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuario de Registro </title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body class="register">
+    
+    <form class="formulario">
+        <label for="Nombre">Nombre</label>
+        <input class="inputs" type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
+        <br><br>
+        <label for="Apellido">Apellido</label>
+        <input class="inputs" type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
+        <br><br>
+        <label for="Correo">Correo</label>
+        <input class="inputs" type="email" name="Correo" id="Correo" placeholder="Correo" required>
+        <br><br>
+        <input class="inputs" type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña" required>
+        <br><br>
+        <input class="inputs"type="number" name="Edad" id="Edad" placeholder="Edad" min="3" max="100" required>
+        <br><br>
+        <input class="inputs" type="tel" name="Telefono" id="Telefono" placeholder="Telefono celular" minlength="10" maxlength="19" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <br><br>
+        <div class="rada">
+        <input class="radios" type="radio" name="Sexo" id="Masculino" value="Masculino" required>
+        <label class="rds" for="Masculino">Masculino</label>
+        <input class="radios" type="radio" name="Sexo" id="Femenino" value="Femenino" required>
+        <label class="rds" for="Femenino">Femenino</label>
+        </div>
+        <br><br>
+        <input class="check" type="checkbox" name="Terminos" id="Terminos" required>
+        <label class="trms" for="Terminos"><a href="https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM" target="_blank">Acepto los terminos y condiciones</a></label>
+        <!--<input type="button" value="Registrar" id="Registrar">-->
+        <br><br>
+        <input  class="buttons"type="submit" value="Enviar">
+        <br><br>
+        <input class="buttons" type="reset" value="Limpiar">
+        <br><br>
+        <input class="buttons" type="button" value="Ya tengo una cuenta"  onclick="location.href='https://github.com/login'">
+        <!--<label for="Ya tengo una cuenta"><a href="https://github.com/login"> Ya tengo una cuenta</a></label>-->
+    </form>
+    </section>
+    
+</body>
+</html>
